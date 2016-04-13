@@ -1,0 +1,9 @@
+[Core]
+Name = {{ cookiecutter.repo_name }}
+Module = {{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}
+
+[Documentation]
+Author = {{ cookiecutter.full_name }}
+Version = {{ cookiecutter.version }}
+Website = {{ cookiecutter.website }}
+Description = {{ cookiecutter.description }}

@@ -1,0 +1,15 @@
+{
+  "full_name": "Sandy Chapman",
+  "email": "schapman@lixar.com",
+  "project_language": "",
+  "project_framework": "",
+  "repo_name": "{{ cookiecutter.project_language }}_{{ cookiecutter.project_framework }}",
+  "version": "0.0.0.1",
+  "copyrightholder": "{{ cookiecutter.full_name }}",
+  "api_definition": "",
+  "structs_and_enums": "",
+  "description": "",
+  "company": "",
+  "website": "https://github.com/Lixar/giant",
+  "library_name": "giant-plugin"
+}
