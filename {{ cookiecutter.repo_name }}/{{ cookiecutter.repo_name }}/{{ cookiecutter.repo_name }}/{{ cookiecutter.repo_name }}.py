@@ -1,20 +1,16 @@
 #!/usr/bin/env python
 
 import jinja2
-from openapi_pirate.openapi_pirate import BasePirate
+from giant.giant_base import BaseGiant{{ cookiecutter.project_type|capitalize }}
 import os
 
-class SwaggerPirate(BasePirate):
-        
-    def plugin_name(self):
-        '''Return the name of the plugin.'''
-        return '{{ cookiecutter.library_name }}'
-        
-    def plugin_command(self):
-        '''Returns a tuple containing:
-            * the command line argument to execute the plugin,
-            * the help documentation describing the command.'''
-        return ('{{ cookiecutter.repo_name }}', '{{ cookiecutter.description }}')
+class SwaggerPirate(BaseGiant{{ cookiecutter.project_type|capitalize }}):
+
+    def custom_variables(self):
+        '''Additional variables to make available to your templates.'''
+        return {
+            'generated_citation': 'Plugin generated using giant-plugin!',
+        }
 
     def loader(self):
         '''Returns the Jinja2 template loader for your templates.'''

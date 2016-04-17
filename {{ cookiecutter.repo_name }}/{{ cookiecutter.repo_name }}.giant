@@ -7,3 +7,8 @@ Author = {{ cookiecutter.full_name }}
 Version = {{ cookiecutter.version }}
 Website = {{ cookiecutter.website }}
 Description = {{ cookiecutter.description }}
+
+[Details]
+Type = {{ cookiecutter.project_type|capitalize }}
+Command = {{ cookiecutter.command }}
+Help = {{ cookiecutter.help }}
